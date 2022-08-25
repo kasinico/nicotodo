@@ -1,5 +1,17 @@
 from django.contrib import admin
-from .models import Mytodo
+from todoapp.models import ToDoItem, ToDoList
 
-admin.site.register(Mytodo)
+admin.site.register(ToDoItem)
+admin.site.register(ToDoList)
+
+
+
+
+
+
+
+
+#from .models import Mytodo
+
+#admin.site.register(Mytodo)
 # Register your models here.
