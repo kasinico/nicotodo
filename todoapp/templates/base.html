@@ -10,18 +10,26 @@
     <!--Simple.css-->
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
     <title>Nico To-do Lists</title>
+    
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
 
 <body>
     <div class="container"  >
-        <h1 onclick="location.href='{% url "index" %}'">My first Django To-do Lists</h1>
+        <h4 onclick="location.href='{% url "index" %}'">Personal Challenge Django To-do App</h4>     
+        <hr size="8" noshade>
+
     </div>
     <div>
         {% block content %}
         This content will be replaced by different html code for each page.
         {% endblock %}
     </div>
-
+    
+    
     
 </body>
 

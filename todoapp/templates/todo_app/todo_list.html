@@ -2,10 +2,16 @@
 {% extends "base.html" %}
 
 {% block content %}
+<script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
 <div>
     <div>
         <div>
-            <h3>Edit list:</h3>
+            <p>
+                <input type=button value="Back" icon="back" onClick="javascript:history.go(-1);">
+    
+            </p></div>
+        <div class="col s12 m8 offset-m2 l8 offset-l2">
+            <h3 alignment="center"  >Edit list:</h3>
             <h5>{{ todo_list.title | upper }}</h5>
         </div>
         <ul>
@@ -25,6 +31,7 @@
             <p>There are no to-do items in this list.</p>
             {% endfor %}
         </ul>
+        
         <p>
             <input
                 value="Add a new item"
